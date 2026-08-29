@@ -235,7 +235,49 @@
 
   input[type='range'] {
     width: 100%;
+    height: 2.75rem;
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    touch-action: manipulation;
+  }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--border);
+  }
+
+  input[type='range']::-moz-range-track {
+    height: 0.5rem;
+    border-radius: 999px;
+    background: var(--border);
+  }
+
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 2rem;
     height: 2rem;
+    margin-top: -0.75rem;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 3px solid var(--bg);
+    box-shadow: var(--shadow);
+  }
+
+  input[type='range']::-moz-range-thumb {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--bg);
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: var(--shadow);
+  }
+
+  input[type='range']:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
   }
 
   .preset-grid,

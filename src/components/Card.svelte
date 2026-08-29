@@ -35,23 +35,24 @@
     align-items: center;
     justify-content: center;
     gap: 0.25rem;
+    overflow: hidden;
     user-select: none;
   }
 
   .rank {
     font-weight: 800;
     line-height: 1;
-    font-size: clamp(4rem, 22vw, 9rem);
+    font-size: clamp(4rem, min(22vw, 22svh), 9rem);
   }
 
   .suit {
-    font-size: clamp(2rem, 10vw, 4rem);
+    font-size: clamp(2rem, min(10vw, 10svh), 4rem);
     line-height: 1;
   }
 
   .zen-value {
     margin-top: 0.5rem;
-    font-size: clamp(1rem, 5vw, 1.5rem);
+    font-size: clamp(1rem, min(5vw, 5svh), 1.5rem);
     font-weight: 700;
     color: var(--text-muted);
   }
